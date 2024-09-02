@@ -70,8 +70,9 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     //hilt
-    implementation("com.google.dagger:hilt-android:2.44")
-    kapt("com.google.dagger:hilt-android-compiler:2.44")
+    implementation("com.google.dagger:hilt-android:2.51.1")
+    kapt("com.google.dagger:hilt-android-compiler:2.51.1")
+    implementation ("androidx.hilt:hilt-navigation-compose:1.0.0")
     //room
     val room_version = "2.6.1"
     implementation("androidx.room:room-runtime:$room_version")
@@ -84,6 +85,8 @@ dependencies {
     //navigation
     val nav_version = "2.7.7"
     implementation("androidx.navigation:navigation-compose:$nav_version")
+    //compose life cycle
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.4")
 
 }
 kapt {
