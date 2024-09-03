@@ -65,10 +65,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
             locationPermissionRequest.launch( Manifest.permission.ACCESS_FINE_LOCATION)
         }
     }
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
 }
 
 @Preview(showBackground = true)

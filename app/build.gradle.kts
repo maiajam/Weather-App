@@ -87,6 +87,8 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:$nav_version")
     //compose life cycle
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.4")
+    //coil
+    implementation("io.coil-kt:coil-compose:2.7.0")
 
 }
 kapt {

@@ -6,6 +6,7 @@ import androidx.compose.runtime.mutableLongStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.weatherapp.data.local.repo.WeatherRepo
+import com.example.weatherapp.data.model.CurrentWeather
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch
@@ -15,7 +16,7 @@ import javax.inject.Inject
 @HiltViewModel
 class MainViewModel @Inject constructor(weatherRepo: WeatherRepo):ViewModel() {
 
-   private val currentWeatheState = MutableStateFlow<Int>(0)
+   private val currentWeatheState = MutableStateFlow<CurrentWeather?>(null)
    val _currentWeatherState = currentWeatheState
 
    init {
